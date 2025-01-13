@@ -15,5 +15,8 @@ Learning basic fundamentals of rust
 + Barrowing and Lifetime
 + etc
 
-
+### Run Installation and Setup tools
++ rustc
++ rustup
++ cargo: package manager
  
