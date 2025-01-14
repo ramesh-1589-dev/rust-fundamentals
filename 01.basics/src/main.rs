@@ -25,12 +25,56 @@ fn main() {
 
     //Operations
 
-    let add = i + 10  + 10;
+    let add: i32 = i + 10  + 10;
 
-    println!("The Addition of two numbers is {add}")
+    println!("The Addition of two numbers is {}", add);
 
     //Char: In single quotes
     // let n: char ='R';
     // println!("Hi my name is {}", n);
+
+    //Array: Fixed number Of Array
+
+    let mut arr = [1,2,3];
+
+    println!("The Given array is {:?}", arr);
+
+
+
+    //Tuple: Object
+
+    let tup:(i32, &str, bool) = (1, "Ramesh", true);
+
+    println!("Print Tuple : {:#?}", tup);
+
+
+    //String 
+    // Append String
+
+    let mut name = String::from("Ramesh ");
+
+    name.push_str("Rathod");
+
+    println!("Your name is {}", name);
+
+    //Vector
+    let mut v = Vec::new();
+    v.push(20);
+    v.push(30);
+    v.push(40);
+ 
+    println!("size of vector is :{}",v.len());
+    println!("{:?}",v);
+    v.remove(1);
+
+    println!("size after remove of vector is :{}",v.len());
+    println!("{:?}",v);
+
+    for i in &v {
+        println!("{} \n",i);
+     }
+
+
+
 
 }
