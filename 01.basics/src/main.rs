@@ -74,7 +74,19 @@ fn main() {
         println!("{} \n",i);
      }
 
+    //HashMap
+    
+    let mut user_details = HashMap::new();
+    user_details.insert("first_name","Ramesh");
+    user_details.insert("last_name","Rathod");
+    
+    println!(" User Details >> {:?}",user_details);
+    
+    use std::collections::HashMap;
+    let mut users = Vec::new();
+    users.push(user_details);
 
 
+    println!(" User Array with details >> {:?}",users);
 
 }
